@@ -43,7 +43,7 @@ export const createStripeSession = async ({ period }: TcreateStripeSession) => {
     const stripeSession = await stripe.checkout.sessions.create({
       success_url: billingUrl,
       cancel_url: billingUrl,
-      payment_method_types: ["card"],
+      allowed_payment_method_types: ["card"],
       mode: "payment",
       billing_address_collection: "auto",
       line_items: [

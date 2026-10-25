@@ -42,7 +42,7 @@ export const createStripePayIntentSession = async ({ period }: Tperiod) => {
       customer: customer.id,
       success_url: billingUrl,
       cancel_url: billingUrl,
-      payment_method_types: ["card"],
+      allowed_payment_method_types: ["card"],
       mode: "payment",
       billing_address_collection: "auto",
       line_items: [

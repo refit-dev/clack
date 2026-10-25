@@ -120,8 +120,8 @@ dependencies:
     specifier: ^3.1.0
     version: 3.2.0
   stripe:
-    specifier: ^14.20.0
-    version: 14.21.0
+    specifier: ^23.0.0
+    version: 23.0.0(@types/node@20.11.29)
   tailwind-merge:
     specifier: ^2.2.1
     version: 2.2.2
@@ -13332,6 +13332,7 @@ packages:
     engines: {node: '>=0.6'}
     dependencies:
       side-channel: 1.0.6
+    dev: true
 
   /querystring-es3@0.2.1:
     resolution: {integrity: sha512-773xhDQnZBMFobEiztv8LIl70ch5MSF/jUQVlhwFyBILqq96anmoctVIYz+ZRp0qbCKATTn6ev02M3r7Ga5vqA==}
@@ -14682,12 +14683,16 @@ packages:
     resolution: {integrity: sha512-6fPc+R4ihwqP6N/aIv2f1gMH8lOVtWQHoqC4yK6oSDVVocumAsfCqjkXnqiYMhmMwS/mEHLp7Vehlt3ql6lEig==}
     engines: {node: '>=8'}
 
-  /stripe@14.21.0:
-    resolution: {integrity: sha512-PFmpl35Myn6UDdVLTHcuppdbkPVvlQfkMHOmgGZh5QOdSUxVmvz090Z4obLg8ta1MNs1PNpzr9i7E39iAIv07A==}
-    engines: {node: '>=12.*'}
+  /stripe@23.0.0(@types/node@20.11.29):
+    resolution: {integrity: sha512-MDE2A5ZVVluYURORaZEVghSmnLJc3w6aHAlZSxDQMsOjOb3V0O6ro/CiaeFlJS4N7uIVmsg98ocRsPmUK6YfyA==}
+    engines: {node: '>=20'}
+    peerDependencies:
+      '@types/node': '>=20'
+    peerDependenciesMeta:
+      '@types/node':
+        optional: true
     dependencies:
       '@types/node': 20.11.29
-      qs: 6.12.0
     dev: false
 
   /style-loader@3.3.4(webpack@5.90.3):

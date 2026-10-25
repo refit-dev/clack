@@ -8,7 +8,7 @@ export const stripe = new Stripe(
     ? process.env.STRIPE_SECRET_KEY_TEST!
     : process.env.STRIPE_SECRET_KEY_PROD!,
   {
-    apiVersion: "2023-10-16",
+    apiVersion: "2026-09-30.endive",
     typescript: true,
   }
 );
